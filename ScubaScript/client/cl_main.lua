@@ -23,7 +23,7 @@ function dive()
         TriggerEvent('chat:addMessage', {
             color = { 224, 96, 4 },
             multiline = true,
-            args = {"ScubaScript", "OxygenTank Activated!"}
+            args = {"ScubaScript", "~b~OxygenTank ~g~Activated!"}
         })
         while (DivingTime ~= 0) do
             Citizen.Wait(1000)
@@ -31,7 +31,7 @@ function dive()
                 TriggerEvent('chat:addMessage', {
                     color = { 224, 96, 4 },
                     multiline = true,
-                    args = {"ScubaScript", "OxygenTank Running On Empty! Surface Now!"}
+                    args = {"ScubaScript", "~b~OxygenTank ~w~Running On ~r~Empty! ~y~Surface Now!"}
                 })
                 DivingTime = (DivingTime - 1)
             elseif (DivingTime == 1) then
@@ -42,7 +42,7 @@ function dive()
             TriggerEvent('chat:addMessage', {
                 color = { 224, 96, 4 },
                 multiline = true,
-                args = {"ScubaScript", "OxygenTank Empty! Change Tank!"}
+                args = {"ScubaScript", "~b~OxygenTank ~r~Empty! ~o~Change ~d~Tank!"}
             })
             else
                 DivingTime = (DivingTime - 1)
