@@ -10,6 +10,8 @@ const DiveMinutes = Config.Minutes;
 
 const DiveSeconds = (DiveMinutes*60);
 
+// Initialize variables
+
 let DiveTog = false;
 
 let DiveTime = DiveSeconds;
